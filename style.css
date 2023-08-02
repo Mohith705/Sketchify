@@ -1709,3 +1709,146 @@ button{
     }
 }
 
+/* Shop Section */
+.shop_header {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("./images/shop.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 1100px){
+    .shop_header{
+        background-size: cover;
+    }
+}
+
+.pricing{
+    width: 100%;
+    min-height: 70vh;
+    background-color: #f4f4f4;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing_heading{
+    font-size: 2.4rem;
+    padding-bottom: 30px;
+}
+
+.pricing_tables{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}  
+
+.pricing_table{
+    flex-basis: 29%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 50px;
+    background-color: gray;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.pricing_table h2{
+    font-size: 1.5rem;
+    transition: all 0.4s ease-in-out;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+.pricing_table:hover{
+    background-color: rgb(43, 42, 42);
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.pricing_table h1{
+    font-size: 2.6rem;
+    text-align: center;
+    align-items: center;
+}
+
+.pricing_table p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.pricing ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 15px;
+}
+
+.pricing li{
+    list-style: square;
+    font-size: 1.2rem;
+}
+
+.pricing_button{
+    font-size: 15px;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 1050px){
+    .pricing_tables{
+        width: 100%;
+    }
+
+    .pricing_table{
+        flex-basis: 27%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .pricing_heading {
+            font-size: 1.9rem;
+        }
+
+    .pricing_tables{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pricing_table{
+        flex-basis: 100%;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pricing_heading{
+        font-size: 1.6rem;
+    }
+
+    .pricing_tables {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pricing_table {
+        flex-basis: 100%;
+        width: 100%;
+    }
+}

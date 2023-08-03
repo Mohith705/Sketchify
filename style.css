@@ -1896,3 +1896,123 @@ button{
         flex-direction: column;
     }
 }
+
+.other_offers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    max-height: 75vh;
+    background-color: #f4f4f4;
+}
+
+.other_offers_heading{
+    font-size: 2.2rem;
+    padding-bottom: 30px;
+}
+
+.other_offers_cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-bottom: 50px;
+}
+
+.other_offers_card{
+    flex-basis: 40%;
+    max-width: 600px;
+    max-height: 40vh;
+    position: relative;
+}
+
+.other_offers_image{
+    width: 100%;
+    max-height: 40vh;
+}
+
+.other_offers_card img{
+    width: 100%;
+    min-height: 100%;
+}
+
+.other_offers_text{
+    position: absolute;
+    height: 105%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+    display: block;
+}
+
+.other_offers_text h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.other_offers_text:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+.other_offers_text:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.others_button{
+    padding: 13px 80px;
+    font-size: 18px;
+    background-color: gray;
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.others_button:hover{
+    background-color: black;
+}
+
+@media screen and (max-width: 1000px) {
+    .other_offers_cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .other_offers_heading{
+        font-size: 1.8rem;
+    }
+
+    .other_offers_text h3{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .other_offers_cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .other_offers_heading {
+        font-size: 1.2rem;
+    }
+
+    .other_offers_text h3 {
+        font-size: 16px;
+    }
+}

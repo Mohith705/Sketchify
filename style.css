@@ -1904,7 +1904,7 @@ button{
     align-items: center;
     padding: 50px;
     width: 100%;
-    max-height: 75vh;
+    max-height: 80vh;
     background-color: #f4f4f4;
 }
 
@@ -1917,8 +1917,8 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
-    padding-bottom: 50px;
+    gap: 50px;
+    padding-bottom: 80px;
 }
 
 .other_offers_card{
@@ -1940,7 +1940,7 @@ button{
 
 .other_offers_text{
     position: absolute;
-    height: 105%;
+    height: 120%;
     width: 100%;
     top: 0;
     left: 0;

@@ -267,4 +267,3 @@ let artistsof = [
         img: `./images/job3.avif`
     }
 ];
-

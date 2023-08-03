@@ -1918,7 +1918,7 @@ button{
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
 }
 
 .other_offers_card{
@@ -1940,7 +1940,7 @@ button{
 
 .other_offers_text{
     position: absolute;
-    height: 120%;
+    height: 110%;
     width: 100%;
     top: 0;
     left: 0;
